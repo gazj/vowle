@@ -47,7 +47,7 @@
 			toaster.pop(modeData.modes[$mode].name);
 		}}
 	>
-		wordle+
+		<img src="img/banner-transparent.png" height="42px" />
 	</h1>
 	<div class="icons">
 		{#if showStats}
@@ -91,6 +91,7 @@
 		width: 100%;
 		height: var(--height);
 		position: relative;
+		margin-top: 8px;
 	}
 	.icons {
 		height: 100%;

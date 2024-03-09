@@ -2,6 +2,7 @@
 	import { getRowData, words } from "../../utils";
 
 	import Row from "./Row.svelte";
+	import HintRow from "./HintRow.svelte";
 	import ContextMenu from "../widgets/ContextMenu.svelte";
 	import { createEventDispatcher } from "svelte";
 	import { scale } from "svelte/transition";
@@ -34,7 +35,7 @@
 		if (guesses >= num) {
 			x = cx;
 			y = cy;
-			showCtx = true;
+			//showCtx = true;
 			word = guesses > num ? val : "";
 
 			const match = getRowData(num, board);
@@ -73,6 +74,7 @@
 {/if}
 
 <div class="board" on:touchstart={swipeStart} on:touchend={swipeEnd} on:touchmove|preventDefault>
+	<HintRow hints={board.hints} />
 	{#each value as _, i}
 		<Row
 			num={i}
@@ -104,11 +106,13 @@
 <style>
 	.board {
 		display: grid;
-		grid-template-rows: repeat(var(--rows), 1fr);
+		grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
+		//grid-template-rows: repeat(var(--rows), 1fr);
 		gap: 5.5px;
 		max-height: 420px;
 		flex-grow: 1;
-		aspect-ratio: var(--cols) / var(--rows);
+		aspect-ratio: 1.2;
+		//aspect-ratio: var(--cols) / var(--rows);
 		padding: 10px;
 		position: relative;
 	}

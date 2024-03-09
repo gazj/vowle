@@ -1,7 +1,7 @@
 {
-  "name": "wordle+",
-  "description": "A remake of the popular game Wordle with additional modes and features.",
-  "version": "1.5.2",
+  "name": "vowle",
+  "description": "A remake of the popular game Wordle, where vowel placement is provided as a clue, but fewer guesses are allowed.",
+  "version": "1.0.1",
   "type": "module",
   "private": "true",
   "license": "GPL-3.0",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MikhaD/wordle.git"
+    "url": "git+https://github.com/gazj/vowle.git"
   },
   "keywords": [],
-  "author": "MikhaD",
+  "author": "gazj",
   "bugs": {
-    "url": "https://github.com/MikhaD/wordle/issues"
+    "url": "https://github.com/gazj/vowle/issues"
   },
-  "homepage": "https://github.com/MikhaD/wordle#readme",
+  "homepage": "https://github.com/gazj/vowle#readme",
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.2",
     "@tsconfig/svelte": "^3.0.0",

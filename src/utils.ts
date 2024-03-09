@@ -2,7 +2,7 @@ import seedRandom from "seedrandom";
 import { GameMode, ms } from "./enums";
 import wordList from "./words_5";
 
-export const ROWS = 6;
+export const ROWS = 4;
 export const COLS = 5;
 
 export const words = {
@@ -250,6 +250,7 @@ export class GameState extends Storable {
 			this.board = {
 				words: Array(ROWS).fill(""),
 				state: Array.from({ length: ROWS }, () => (Array(COLS).fill("🔳"))),
+				hints: Array(COLS).fill(""),
 			};
 
 			this.#valid = true;
@@ -425,15 +426,15 @@ export class LetterStates {
 	public z: LetterState = "🔳";
 
 	constructor(board?: GameBoard) {
-		if (board) {
-			for (let row = 0; row < ROWS; ++row) {
-				for (let col = 0; col < board.words[row].length; ++col) {
-					if (this[board.words[row][col]] === "🔳" || board.state[row][col] === "🟩") {
-						this[board.words[row][col]] = board.state[row][col];
-					}
-				}
-			}
-		}
+		// if (board) {
+		// 	for (let row = 0; row < ROWS; ++row) {
+		// 		for (let col = 0; col < board.words[row].length; ++col) {
+		// 			if (this[board.words[row][col]] === "🔳" || board.state[row][col] === "🟩") {
+		// 				this[board.words[row][col]] = board.state[row][col];
+		// 			}
+		// 		}
+		// 	}
+		// }
 	};
 	/**
 	 * IMPORTANT: When this method is called svelte will not register the update, so you need to set
@@ -441,13 +442,12 @@ export class LetterStates {
 	 * Example: `states = states;`.
 	 */
 	update(state: LetterState[], word: string) {
-		state.forEach((e, i) => {
-			const ls = this[word[i]];
-			if (ls === "🔳" || e === "🟩") {
-				this[word[i]] = e;
-			}
-		});
-
+		// state.forEach((e, i) => {
+		// 	const ls = this[word[i]];
+		// 	if (ls === "🔳" || e === "🟩") {
+		// 		this[word[i]] = e;
+		// 	}
+		// });
 	}
 }
 

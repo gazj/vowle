@@ -15,7 +15,7 @@
 	import { Toaster } from "./components/widgets";
 	import { setContext } from "svelte";
 
-	document.title = "Wordle+ | An infinite word guessing game";
+	document.title = "Vowle | A Wordle clone with vowel hints";
 </script>
 
 <script lang="ts">
@@ -53,6 +53,11 @@
 		}
 		// Set the letter states when data for a new game mode is loaded so the keyboard is correct
 		letterStates.set(new LetterStates(state.board));
+		// Set hints when data for a new game mode is loaded so the hints are correct
+		for(let i = 0; i < word.length; ++i) {
+		    state.board.hints[i] = ["a","e","i","o","u"].includes(word[i])
+		    	? "vowel" : "consonant";
+		};
 	});
 
 	$: saveState(state);

@@ -37,6 +37,8 @@
 	--red: #9C2323;
 	--color-present: #b59f3b;
 	--color-correct: #538d4e;
+	--color-vowel: #f2a5b7;
+	--color-consonant: #5acdf6;
 	--color-absent: var(--border-primary);
 	--evaluated-key-color: var(--fg-primary);
 	--key-bg: var(--fg-secondary);
@@ -67,6 +69,8 @@ body {
 .colorblind {
 	--color-correct: #f5793a;
 	--color-present: #85c0f9;
+	--color-vowel: #f97b98;
+	--color-consonant: #20c2fc;
 }
 
 h3 {

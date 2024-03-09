@@ -20,6 +20,7 @@ type LetterState = "🔳" | "⬛" | "🟨" | "🟩";
 type GameBoard = {
 	words: string[],
 	state: LetterState[][],
+	hints: string[],
 };
 
 type SettingType = "switch" | "dropdown" | "custom";

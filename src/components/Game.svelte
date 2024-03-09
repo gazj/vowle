@@ -157,7 +157,7 @@
 
 <svelte:body on:click={board.hideCtx} on:contextmenu={board.hideCtx} />
 
-<main class:guesses={game.guesses !== 0} style="--rows: {ROWS}; --cols: {COLS}">
+<main class:guesses={game.guesses !== 0} style="--rows: {ROWS + 1}; --cols: {COLS}">
 	<Header
 		bind:showRefresh
 		tutorial={$settings.tutorial === 2}
@@ -196,7 +196,8 @@
 
 <Modal
 	bind:visible={showTutorial}
-	on:close|once={() => $settings.tutorial === 3 && --$settings.tutorial}
+	//on:close|once={() => $settings.tutorial === 3 && --$settings.tutorial}
+	on:close|once={() => $settings.tutorial === 3}
 	fullscreen={$settings.tutorial === 0}
 >
 	<Tutorial visible={showTutorial} />
