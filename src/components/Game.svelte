@@ -274,7 +274,7 @@
 	main {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		//justify-content: space-between;
 		align-items: center;
 		height: 100%;
 		max-width: var(--game-width);
