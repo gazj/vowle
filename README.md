@@ -23,9 +23,10 @@ Hosted on GitHub pages [here](https://gazj.github.io/wordle/).
 - You can access previous games from the settings menu by inputting a game number or link.
 - Service worker which allows the game to be easily downloaded as a progressive web app and run offline.
 - Give Up button.
+- Vowel and consonant positions are shown above the game board.
 
 ## Additional modes
-The game mode can be changed by clicking WORDLE+ at the top of the screen or swiping the board in either direction.
+The game mode can be changed from the settings menu.
 
 **Hourly mode**: A new word every hour.
 
