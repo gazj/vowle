@@ -110,6 +110,8 @@
 		//grid-template-rows: repeat(var(--rows), 1fr);
 		gap: 5.5px;
 		max-height: 360px;
+		max-width: 432px;
+		width: 100%;
 		flex-grow: 1;
 		aspect-ratio: 1.2;
 		//aspect-ratio: var(--cols) / var(--rows);

@@ -47,7 +47,7 @@
 			toaster.pop(modeData.modes[$mode].name);
 		}}
 	>
-		<img src="img/banner-transparent.png" height="42px" />
+		<img class="header-banner" src="img/banner-transparent.png" />
 	</h1>
 	<div class="icons">
 		{#if showStats}
@@ -106,5 +106,15 @@
 		font-size: var(--fs-large);
 		cursor: pointer;
 		text-align: center;
+	}
+	.header-banner {
+		width: 232px;
+		height: 42px;
+	}
+	@media only screen and (max-width: 418px) {
+		.header-banner {
+			width: 160px;
+			height: 30px;
+		}
 	}
 </style>
