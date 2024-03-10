@@ -218,6 +218,7 @@ export const PRAISE = [
 	"Splendid",
 	"Great",
 	"Phew",
+	"Oh boy!"
 ];
 
 abstract class Storable {
