@@ -196,8 +196,7 @@
 
 <Modal
 	bind:visible={showTutorial}
-	//on:close|once={() => $settings.tutorial === 3 && --$settings.tutorial}
-	on:close|once={() => $settings.tutorial === 3}
+	on:close|once={() => $settings.tutorial === 3 && --$settings.tutorial && --$settings.tutorial && --$settings.tutorial}
 	fullscreen={$settings.tutorial === 0}
 >
 	<Tutorial visible={showTutorial} />
