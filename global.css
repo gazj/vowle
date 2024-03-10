@@ -69,6 +69,8 @@ body {
 .colorblind {
 	--color-correct: #f5793a;
 	--color-present: #85c0f9;
+	--color-vowel: #f97b98;
+	--color-consonant: #20c2fc;
 }
 
 h3 {
