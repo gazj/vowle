@@ -88,7 +88,7 @@
 		justify-content: space-between;
 		align-items: center;
 		border-bottom: 1px solid var(--border-primary);
-		width: 100%;
+		width: 90%;
 		height: var(--height);
 		position: relative;
 		margin-top: 8px;
