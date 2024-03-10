@@ -141,6 +141,7 @@
 	}
 
 	function onSwipe(e: Swipe) {
+		return; // disable swipe
 		switch (e.detail.direction) {
 			case "left":
 				$mode = ($mode + 1) % modeData.modes.length;
