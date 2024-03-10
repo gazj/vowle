@@ -127,6 +127,10 @@
 		game = new GameState($mode, localStorage.getItem(`state-${$mode}`));
 		word = words.words[seededRandomInt(0, words.words.length, modeData.modes[$mode].seed)];
 		$letterStates = new LetterStates();
+		for(let i = 0; i < word.length; ++i) {
+		    game.board.hints[i] = ["a","e","i","o","u"].includes(word[i])
+		    	? "vowel" : "consonant";
+		};
 		showStats = false;
 		showRefresh = false;
 		timer.reset($mode);
