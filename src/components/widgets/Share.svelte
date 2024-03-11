@@ -15,7 +15,7 @@
 			}/${state.board.words.length}\n\n    ${state.board.state
 				.slice(0, state.guesses)
 				.map((r) => r.join(""))
-				.join("\n    ")}\n\nvowle.superc.lol`
+				.join("\n    ")}\n\nPlay at vowle.superc.lol\nhttps://vowle.superc.lol/`
 		);
 		toaster.pop("Copied");
 	}
