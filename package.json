@@ -1,7 +1,7 @@
 {
   "name": "vowle",
   "description": "A remake of the popular game Wordle, where vowel placement is provided as a clue, but fewer guesses are allowed.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "private": "true",
   "license": "GPL-3.0",
