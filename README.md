@@ -1,7 +1,4 @@
 ![Vowle](https://raw.githubusercontent.com/gazj/vowle/main/public/img/banner.png)
-<div align="center">
-  <img src="https://github.com/gazj/vowle/workflows/Publish/badge.svg?branch=main" alt="Publish workflow"/>
-</div>
 
 ---
 A recreation of the popular game [Wordle](https://www.nytimes.com/games/wordle/) by Josh Wardle (now purchased by the New York Times), with additional modes and features.
