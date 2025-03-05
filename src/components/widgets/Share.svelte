@@ -15,7 +15,7 @@
 			}/${state.board.words.length}\n\n    ${state.board.state
 				.slice(0, state.guesses)
 				.map((r) => r.join(""))
-				.join("\n    ")}\n\nPlay at vowle.superc.lol\nhttps://vowle.superc.lol/`
+				.join("\n    ")}\n\nPlay at gazj.github.io/vowle\nhttps://gazj.github.io/vowle/`
 		);
 		toaster.pop("Copied");
 	}
